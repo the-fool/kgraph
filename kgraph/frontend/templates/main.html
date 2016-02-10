@@ -1,0 +1,15 @@
+{% extends "layouts/base.html" %}
+
+{% block body %}
+<div class="container" ng-app="kgraphApp">
+    <div ng-view></div>
+</div>
+
+{% endblock %}
+{% block scripts %}
+{{ super() }}
+{% assets "js_main" -%}
+
+<script src="{{ ASSET_URL }}"></script>
+{% endassets %}
+{% endblock %}

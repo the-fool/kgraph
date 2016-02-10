@@ -1,0 +1,19 @@
+*.pyc
+node_modules/
+*~
+*._*
+*.pyc
+#*#
+node_modules/
+bower_components/
+.DS_Store
+tmp
+git logs/*
+Chrome*
+Firefox*
+data.sqlite
+*.sqlite
+migrations/
+venv/
+libcache.json
+*.log
