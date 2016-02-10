@@ -2,7 +2,10 @@ from flask_assets import Environment, Bundle
 
 
 #: application css bundle
-css_main = Bundle("css/kgraph.css")
+css_main = Bundle("css/kgraph.css",
+                 "js/graph/css/graph.css")
+
+
 
 #: consolidated css bundle
 css_lib = Bundle("bower_components/bootstrap/dist/css/bootstrap.min.css")
@@ -28,6 +31,7 @@ js_main = Bundle("js/**/*.js",
 def init_app(app):
     webassets = Environment(app)
     webassets.register('css_all', css_lib)
+    webassets.register('css_main', css_main)
     webassets.register('js_vendor', js_vendor)
     webassets.register('js_main', js_main)
     webassets.manifest = 'cache' if not app.debug else False
