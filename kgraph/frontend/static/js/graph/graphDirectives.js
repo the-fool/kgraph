@@ -142,12 +142,13 @@
 
     kgraphGraphDirectives.directive('graphMainSvg', function () {
 
-
         function grapher($scope, $elem, attrs) {
-            var width = 500,
-                height = 500;
-            var diameter = 400;
-            var duration = 2000;
+            var ctrl = $scope.graphMainSvgCtrl;
+            console.log(ctrl);
+            var width = ctrl.width,
+                height = ctrl.height,
+                diameter = ctrl.diameter,
+                duration = ctrl.duration;
             d3.selectAll("input").on("change", change);
 
             function change() {
@@ -352,9 +353,12 @@
         }
 
         function ctrl() {
-            this.height = '300px',
-                this.width = '300px';
+            this.height = 600;
+            this.width = 600;
+            this.duration = 1500;
+            this.diameter = 300;
         }
+
         return {
             restrict: 'E',
             templateUrl: baseTplUrl + 'graphMainSVG.html',
