@@ -1,4 +1,4 @@
 {
 	"directory":"kgraph/frontend/static/bower_components",
-	"interactive":false
+	"interactive":true
 }

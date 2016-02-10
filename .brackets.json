@@ -1,0 +1,5 @@
+{
+    "jscodehints.detectedExclusions": [
+        "/home/thomas/workspace/kgraph/kgraph/frontend/static/bower_components/angular-mocks/ngMockE2E.js"
+    ]
+}

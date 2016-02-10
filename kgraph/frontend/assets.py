@@ -13,6 +13,11 @@ js_vendor = Bundle("bower_components/jquery/dist/jquery.js",
                    "bower_components/angular/angular.js",
                    "bower_components/angular-route/angular-route.js",
                    "bower_components/angular-resource/angular-resource.js",
+                   "bower_components/lodash/dist/lodash.js",
+                   "bower_components/graphlib/dist/graphlib.core.js",
+                   "bower_components/d3/d3.js",
+                   "bower_components/dagre/dist/dagre.core.js",
+                   "bower_components/dagre-d3/dist/dagre-d3.core.js",
                    )
 
 #: application js bundle

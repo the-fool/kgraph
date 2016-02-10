@@ -1,18 +1,12 @@
 {
   "name": "kgraph",
-  "description": "Remote control a home music station",
+  "description": "kgraph",
   "main": "none",
   "authors": [
     "Thomas Ruble"
   ],
   "license": "MIT",
-  "keywords": [
-    "cmus",
-    "python",
-    "flask",
-    "music",
-    "home-automation"
-  ],
+  "keywords": [],
   "moduleType": [],
   "homepage": "",
   "private": true,
@@ -27,7 +21,12 @@
     "angular": "angularjs#~1.4.9",
     "angular-route": "~1.4.9",
     "angular-resource": "~1.4.9",
-    "bootstrap": "~3.3.6"
+    "bootstrap": "~3.3.6",
+    "lodash": "~4.3.0",
+    "dagre-d3": "~0.4.17"
+  },
+  "resolutions": {
+    "lodash": "4.X"
   },
   "devDependencies": {
     "angular-mocks": "~1.4.9"
